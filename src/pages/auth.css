@@ -1,0 +1,19 @@
+.auth {
+    width: 100wv;
+    height: 100vh;
+    background-color: #EAD7D7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.auth_center {
+    text-align: center;
+    padding: 15px 30px;
+    border-radius: 5px;
+    width: 20%;
+    background-color: #6d466b;
+    color: #f2f2f2
+}

@@ -5,9 +5,10 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Layout from './pages/Layout';
 import Article from './pages/Article';
-
+import Articles from './pages/Articles';
+import Auth from './pages/Auth';
 function App() {
-  let {id} = useParams()
+ 
   return (
     <div className="App">
            
@@ -16,10 +17,13 @@ function App() {
           <Route index element={<Home />}/>     
           <Route path="about" element={<About/>}/>
           <Route path="contact" element={<Contact/>}/>
-            <Route path="articles" >
-              <Route path=":id" element={<Article/>}/>
-            </Route>
+            <Route path='articles' element={<Articles/>}/>
+
+              <Route path="articles/:id" element={<Article/>}/>
+            
         </Route>
+
+        <Route path='/auth' element={<Auth/>}/>
       </Routes>
      
     </div>
